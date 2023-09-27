@@ -11,6 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/simple_calculator"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
@@ -46,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:textSize="30sp"
         android:layout_marginTop="32dp"
         android:text="+"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +58,7 @@
         android:id="@+id/buttonSubtração"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
         android:text="-"
@@ -68,6 +72,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="x"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/buttonSubtração"
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
@@ -77,7 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="div"
+        android:text="÷"
+        android:textSize="30sp"
         app:layout_constraintStart_toEndOf="@+id/buttonMulti"
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
@@ -86,7 +92,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="92dp"
-        android:text="Resposta: "
+        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

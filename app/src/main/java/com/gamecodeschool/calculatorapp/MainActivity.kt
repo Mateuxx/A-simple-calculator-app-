@@ -1,5 +1,6 @@
 package com.gamecodeschool.calculatorapp
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,53 +20,45 @@ class MainActivity : AppCompatActivity() {
         binding.buttonDiv.setOnClickListener { calculateDiv() }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calculateDiv() {
         val getValueNumber01 = binding.number01.text.toString()
         val number01 = getValueNumber01.toDouble()
-        println("Number01 : $number01\n")
-
         //get number 02 value
         val getNumber02 =binding.number02.text.toString()
         val number02 = getNumber02.toDouble()
-        println("Number02: $number02")
-        println("Resposta: ${number01 / number02}")
+        binding.textResult.text = "Resposta = ${number01 / number02}"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calculateMulti() {
         val getValueNumber01 = binding.number01.text.toString()
         val number01 = getValueNumber01.toDouble()
-        println("Number01 : $number01\n")
-
         //get number 02 value
         val getNumber02 =binding.number02.text.toString()
         val number02 = getNumber02.toDouble()
-        println("Number02: $number02")
-        println("Resposta: ${number01 * number02}")
+        binding.textResult.text = "Resposta = ${number01 * number02}"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calculateSub() {
         val getValueNumber01 = binding.number01.text.toString()
         val number01 = getValueNumber01.toDouble()
-        println("Number01 : $number01\n")
-
         //get number 02 value
         val getNumber02 =binding.number02.text.toString()
         val number02 = getNumber02.toDouble()
-        println("Number02: $number02")
-        println("Resposta: ${number01 - number02}")
+        binding.textResult.text = "Resposta = ${number01 - number02}"
     }
 
+    @SuppressLint("SetTextI18n")
     private fun calculateAdd() {
         //Get number01 value
         val getValueNumber01 = binding.number01.text.toString()
         val number01 = getValueNumber01.toDouble()
-        println("Number01 : $number01\n")
-
         //get number 02 value
         val getNumber02 =binding.number02.text.toString()
         val number02 = getNumber02.toDouble()
-        println("Number02: $number02")
-        println("Resposta: ${number01 + number02}")
+        binding.textResult.text = "Resposta = ${number01 + number02}"
 
     }
 
