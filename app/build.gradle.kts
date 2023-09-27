@@ -6,6 +6,9 @@ plugins {
 android {
     namespace = "com.gamecodeschool.calculatorapp"
     compileSdk = 33
+    buildFeatures{
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.gamecodeschool.calculatorapp"

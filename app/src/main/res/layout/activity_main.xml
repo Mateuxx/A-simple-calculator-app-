@@ -42,7 +42,7 @@
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAdição"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -52,44 +52,44 @@
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonSubtração"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
         android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdição"
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonMulti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="x"
-        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/buttonSubtração"
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonDiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="div"
-        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/buttonMulti"
         app:layout_constraintTop_toBottomOf="@+id/number02" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/text_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="TextView"
+        android:layout_marginTop="92dp"
+        android:text="Resposta: "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
